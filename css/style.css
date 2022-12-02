@@ -1,0 +1,297 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  font-family: "Inter", sans-serif;
+  background-color: #c4c007;
+  width: 100%;
+}
+
+#nav2 {
+  padding-left: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1530px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .nav {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav {
+    max-width: none;
+  }
+}
+.nav__list {
+  display: flex;
+}
+.nav-item-logo {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.nav-link {
+  margin-right: 30px;
+  color: #222222;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.bag-count {
+  background-color: #222222;
+  font-size: 12px;
+}
+
+.main {
+  width: 100%;
+  background-size: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/mainFont.png");
+}
+.main__container {
+  width: 100%;
+  max-width: 1530px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 190px;
+  padding-bottom: 260px;
+}
+@media screen and (max-width: 1200px) {
+  .main__container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main__container {
+    max-width: none;
+  }
+}
+.main-title {
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.main-decription {
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.btn {
+  background-color: #FFFFFF;
+  display: block;
+  width: 230px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #c4c007;
+}
+
+.hits {
+  position: relative;
+  width: 100%;
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 1530px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .hits {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hits {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hits {
+    max-width: none;
+  }
+}
+.hits-title {
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 80px;
+  margin-top: 130px;
+}
+.hits-product li {
+  display: inline-block; /* Строчно-блочный элемент */
+  box-sizing: border-box;
+  width: 360px;
+  height: 600px;
+  margin-right: 30px;
+}
+.hits-product li-title {
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+
+.menu {
+  background-color: #222222;
+  position: static;
+  width: 100%;
+}
+.menu__category {
+  padding-left: 195px;
+  padding-top: 203px;
+}
+.menu__category-link {
+  display: block;
+  text-transform: uppercase;
+  color: #696969;
+  font-size: 80px;
+  font-weight: 700px;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  transition: 0.2s;
+  margin-bottom: 82px;
+}
+.menu__category-link:hover {
+  color: #c4c007;
+}
+.menu__btn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  width: 150px;
+  height: 150px;
+  font-size: 24px;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Inter", sans-serif;
+  margin-left: 795px;
+  margin-bottom: 93px;
+}
+.menu__btn:hover {
+  background-color: #c4c007;
+}
+
+.blog__title {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-family: "Gothic A1", sans-serif;
+  padding-top: 150px;
+}
+.blog__article {
+  display: inline-block;
+}
+.blog__article__1 {
+  display: inline-block;
+  background-color: #c4c007;
+}
+.blog__article__1-title {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 40px;
+}
+.blog__article__1-content {
+  font-size: 16px;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+.blog__article__1-img {
+  border-radius: 20%;
+}
+.blog__article__2 {
+  display: inline-block;
+  height: 730px;
+}
+.blog__article__2-title {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 40px;
+}
+.blog__article__2-content {
+  font-size: 16px;
+  font-family: "Gothic A1", sans-serif;
+}
+.blog__article__3 {
+  display: inline-block;
+}
+.blog__article__3-title {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 40px;
+}
+.blog__article__3-content {
+  font-size: 16px;
+  font-family: "Gothic A1", sans-serif;
+}
+.new__title {
+  font-size: 80px;
+  font-family: "Gothic A1", sans-serif;
+  padding-top: 188px;
+  margin-bottom: 14px;
+}
+.new__catalog-link {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.contact {
+  width: 100%;
+  background-image: url("/img/svg/ringUs.png");
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */

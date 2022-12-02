@@ -1,0 +1,315 @@
+$yellow: #c4c007 ;
+$dark-grey: #222222;
+$light-grey: #696969;
+$white: #FFFFFF;
+$black: #000000;
+
+
+$breakpoint-lg: 1200px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+$container-lg: 1530px;
+$container-md: 720px;
+$container-sm: 540px;
+$p: 15px;
+
+@mixin container {
+    width: 100%;
+    max-width: $container-lg;
+    margin: 0 auto; 
+    padding-left: $p;
+    padding-right: $p;
+    @media screen and (max-width: $breakpoint-lg) {
+        max-width: $container-md;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        max-width: $container-sm;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        max-width: none;
+    }
+}
+
+body{
+     margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapper{
+    width: 100%;
+}
+.header{
+    font-family: 'Inter', sans-serif;
+    background-color: $yellow;
+    width: 100%;
+}
+
+#nav1{
+    
+}
+
+#nav2{  
+    padding-left: 0;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     @include container();
+     &__list {
+        display: flex;
+     }
+    &-item {
+        &-logo{
+            width: 80px;
+            height: 80px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+    }
+
+    &-link{
+        margin-right: 30px;
+        color:$dark-grey;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration:none;
+    }
+}
+
+.bag{
+    &-count{
+        background-color: $dark-grey;
+        font-size: 12px;
+    }
+}
+
+.main{
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/mainFont.png");
+    &__container {
+        @include container();
+        padding-top: 190px;
+        padding-bottom: 260px;
+    }
+    &-title{
+        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Inter', sans-serif;
+        color: $white;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    &-decription{
+        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+    }
+}
+ 
+.btn{
+    background-color: $white;
+    display: block;
+    width: 230px;
+    text-align: center;
+    text-decoration: none;
+    color: $black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.btn:hover { 
+    background-color: $yellow;
+}
+
+.hits{
+    position: relative;
+    width: 100%;
+    background-color: $white;
+    @include container();
+    &-title{
+        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Inter', sans-serif;
+        font-size: 80px;
+        margin-top: 130px;
+    }
+
+    &-product{
+    }
+
+    &-product li{
+        display: inline-block; /* Строчно-блочный элемент */
+        box-sizing: border-box;
+        width: 360px;
+        height: 600px;
+        margin-right: 30px;
+
+
+        &-title{
+            font-family: 'Gothic A1', sans-serif;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: $black;
+        }
+    }
+}
+
+ 
+.menu{
+background-color: $dark-grey;
+position: static;
+width: 100%;
+    &__category{
+        padding-left: 195px;
+        padding-top: 203px;
+        &-link{
+        display: block;
+        text-transform: uppercase;
+        color: $light-grey;
+        font-size: 80px;
+        font-weight: 700px;
+        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+        transition: 0.2s;
+        margin-bottom: 82px;
+        }
+        &-link:hover { 
+            color: $yellow;
+        }
+    }
+
+    &__btn{
+        display: inline-block;
+        text-transform: uppercase;
+        color: $black;
+        border-radius: 50%;
+        text-decoration: none;
+        background-color: $white;
+        width: 150px;
+        height: 150px;
+        font-size:24px;
+        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Inter', sans-serif;
+        margin-left: 795px;
+        margin-bottom: 93px;
+
+    }
+    &__btn:hover { 
+        background-color: $yellow;
+    }
+}
+
+.blog{
+    &__title{
+        font-size: 80px;
+        text-transform: uppercase;
+        font-family: 'Gothic A1', sans-serif;
+        padding-top: 150px;
+    }
+    &__article{
+        display: inline-block;
+        &__1{
+            display: inline-block;
+            background-color: $yellow;
+            &-title{
+                font-family: 'Gothic A1', sans-serif;
+                font-size: 40px;
+            }
+            &-content{
+                font-size: 16px;
+                font-family: 'Gothic A1', sans-serif;
+                font-family: 'Inter', sans-serif;
+            }
+            &-img{
+                border-radius: 20%;
+            }
+        }
+
+        &__2{
+            display: inline-block;
+            height: 730px;
+
+            &-title{
+                font-family: 'Gothic A1', sans-serif;
+                font-size: 40px;
+            }
+
+            &-content{
+                font-size: 16px;
+                font-family: 'Gothic A1', sans-serif;
+            }
+            &-img{
+                
+            }
+        }
+
+        &__3{
+            display: inline-block;
+            &-title{
+                font-family: 'Gothic A1', sans-serif;
+                font-size: 40px;
+            }
+            &-content{
+                font-size: 16px;
+                font-family: 'Gothic A1', sans-serif;
+            }
+            &-img{
+
+            }
+
+        }
+
+    }
+}
+
+.new{
+
+        &__title{
+            font-size: 80px;
+            font-family: 'Gothic A1', sans-serif;
+            padding-top: 188px;
+            margin-bottom: 14px;
+        }
+
+        &__catalog{
+
+            &-link{
+                display: inline-block;
+                margin-right: 30px;
+                font-size: 18px;
+                text-decoration: none;
+                color: $black;
+            }
+        }
+
+}
+.contact{
+    width: 100%;
+    background-image: url("/img/svg/ringUs.png");
+    background-size:cover;
+
+}
+ 
