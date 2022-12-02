@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"> 
+
+  
+
 </head>
 <body>
     <header class="header">
@@ -51,35 +54,44 @@
                 </div>
                 
             </div>
-
-            <div class="hits">
+            <div class="all">
                 <h1 class="hits-title">ХИТЫ</h1> 
-                <div class="hits-product">
-                  <ul>
-                      <li>
-                          <p class="hits-product-title">SMOANT CHARON BABY PLUS POD</p>
-                          <img src="css/img/vape1.png">
-                      </li>
-                      <li>
-                          <p class="hits-product-title">SMOANT BATTLESTAR BABY POD</p>
-                          <img src="css/img/vape2.png">
-                      </li>
-                      <li>
-                          <p class="hits-product-title">HQD CUVIE BLUEBERRY</p>
-                          <img src="css/img/vape3.png">
-                      </li>
-                      <li>
-                          <p class="hits-product-title">ЖИДКОСТЬ BRUSKO - ГРЕЙПФРУТ 
-                            И ГОЛУБИКА</p>
-                          <img src="css/img/vape4.png">
-                      </li>
-                      <li>
-                          <p class="hits-product-title">ЖИДКОСТЬ BRUSKO - ШОКОЛАДНОЕ МОРОЖЕННОЕ В ВАФЕЛЬНОМ СТАКАНЧИКЕ</p>
-                          <img src="css/img/vape5.png">
-                      </li>
-                  </ul>
-                </div> 
-              </div>
+                <input checked type="radio"  name="respond" id="desktop">
+                <article id="slider">
+                        <input checked type="radio" name="slider" id="switch1">
+                        <input checked type="radio" name="slider" id="switch2">
+                        <input checked type="radio" name="slider" id="switch3">
+                        <input checked type="radio" name="slider" id="switch4">
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="image">
+                                    <article> <img src="css/img/vape1.png"> </article>
+                                    <article> <img src="css/img/vape2.png"> </article>
+                                    <article> <img src="css/img/vape3.png"> </article>
+                                    <article> <img src="css/img/vape4.png"> </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                        </div>
+                        <div id="active">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                        </div>
+                </article>
+             </div>
+            </div>
+                <div id="all">
+                         
+                </div>
+            
+            
 
               <div class="menu">
 
@@ -143,10 +155,14 @@
               </div>
 
               <div class="contact">
-                
+                <div class="contact__inf">
+                    <h1>Мы всегда на связи</h1>
+                    <h4>Оставьте заявку и мы вам перезвоним или</h4>
+                    <h4>наберите нас по номеру: +7 (8452) 75-85-83</h4>
+                </div>
+                <button class="contact__btn">Оставить заявку</button>
               </div>
         </div>
-     
      
 </body>
 </html>
