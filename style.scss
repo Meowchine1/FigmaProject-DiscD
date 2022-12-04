@@ -477,31 +477,34 @@ a {
     font-family: "Gothic A1", sans-serif;
     font-family: "Inter", sans-serif;
 }
+
 .benefits {
-    @include container();
-}
-.benefits__var {
+    width: 100%;
+    max-width: 1530px;
+    margin: auto;
+    padding-inline: 7%;
+    margin-bottom: 50px;
+    }
+    .benefits__var {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.benefitsTable {
+    }
+    
+    .benefitsTable {
     display: grid;
-    grid-template-columns: 400px 300px;
+    grid-template: 1fr 1fr / 1fr 1fr;
     row-gap: 5rem;
-}
-#benefitsImg {
-    margin-bottom: 150px;
-}
+    }
+
 .num {
-    color: $yellow;
-    font-size: xx-large;
-    padding-right: 345px;
+color: #FFED00;
+font-size: xx-large;
 }
+
 .numtxt {
-    font-family: "Gothic A1", sans-serif;
-    font-family: "Inter", sans-serif;
-    margin-right: 30px;
+font-family: "Inter", sans-serif;
+margin-right: 10px;
 }
 
 .footer1 {

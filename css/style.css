@@ -19,7 +19,7 @@ ul {
 
 .header {
   font-family: "Inter", sans-serif;
-  background-color: #FFED00;
+  background-color: #ffed00;
   width: 100%;
 }
 
@@ -109,7 +109,7 @@ ul {
 .main-title {
   font-family: "Gothic A1", sans-serif;
   font-family: "Inter", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -119,11 +119,11 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .btn {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: block;
   width: 230px;
   text-align: center;
@@ -137,7 +137,7 @@ ul {
 }
 
 .btn:hover {
-  background-color: #FFED00;
+  background-color: #ffed00;
 }
 
 .hits {
@@ -147,7 +147,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 1200px) {
   .hits {
@@ -187,7 +187,7 @@ ul {
   margin-bottom: 82px;
 }
 .menu__category-link:hover {
-  color: #FFED00;
+  color: #ffed00;
 }
 .menu__btn {
   display: inline-block;
@@ -195,7 +195,7 @@ ul {
   color: #000000;
   border-radius: 50%;
   text-decoration: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 150px;
   height: 150px;
   font-size: 24px;
@@ -205,7 +205,7 @@ ul {
   margin-bottom: 93px;
 }
 .menu__btn:hover {
-  background-color: #FFED00;
+  background-color: #ffed00;
 }
 
 .blog {
@@ -230,7 +230,7 @@ ul {
 }
 
 .blog__articles > div:hover {
-  background-color: #FFED00;
+  background-color: #ffed00;
   transition: 0.5s;
 }
 
@@ -371,21 +371,25 @@ ul {
   margin-right: 30px;
 }
 
-#slides .image { /*устанавливает общий размер блока с изображениями*/
+#slides .image {
+  /*устанавливает общий размер блока с изображениями*/
   width: 200%;
   line-height: 0;
 }
 
-#overflow { /*сркывает все, что находится за пределами этого блока*/
+#overflow {
+  /*сркывает все, что находится за пределами этого блока*/
   width: 100%;
   overflow: hidden;
 }
 
-article img { /*размер изображений слайдера*/
+article img {
+  /*размер изображений слайдера*/
   width: 50%;
 }
 
-#desktop:checked ~ #slider { /*размер всего слайдера*/
+#desktop:checked ~ #slider {
+  /*размер всего слайдера*/
   max-width: 960px; /*максимальнная длинна*/
 }
 
@@ -418,11 +422,14 @@ article img { /*размер изображений слайдера*/
   width: 68px;
 }
 
-label, a { /*при наведении на стрелки или переключатели - курсор изменится*/
+label,
+a {
+  /*при наведении на стрелки или переключатели - курсор изменится*/
   cursor: pointer;
 }
 
-.all input { /*скрывает стандартные инпуты (чекбоксы) на странице*/
+.all input {
+  /*скрывает стандартные инпуты (чекбоксы) на странице*/
   display: none;
 }
 
@@ -447,13 +454,15 @@ label, a { /*при наведении на стрелки или переклю
   margin-left: -400%;
 }
 
-#controls { /*положение блока всех управляющих элементов*/
+#controls {
+  /*положение блока всех управляющих элементов*/
   margin: -25% 0 0 0;
   width: 100%;
   height: 50px;
 }
 
-#active label { /*стиль отдельного переключателя*/
+#active label {
+  /*стиль отдельного переключателя*/
   border-radius: 10px; /*скругление углов*/
   display: inline-block; /*расположение в строку*/
   width: 15px;
@@ -461,12 +470,14 @@ label, a { /*при наведении на стрелки или переклю
   background: #bbb;
 }
 
-#active { /*расположение блока с переключателями*/
+#active {
+  /*расположение блока с переключателями*/
   margin: 23% 0 0;
   text-align: center;
 }
 
-#active label:hover { /*поведение чекбокса при наведении*/
+#active label:hover {
+  /*поведение чекбокса при наведении*/
   background: #76c8ff;
   border-color: #777 !important; /*выполнение в любом случае*/
 }
@@ -481,15 +492,18 @@ label, a { /*при наведении на стрелки или переклю
   border-color: #18a3dd !important;
 }
 
-#slides .image { /*анимация пролистывания изображений*/
+#slides .image {
+  /*анимация пролистывания изображений*/
   transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-#controls label:hover { /*прозрачность стрелок при наведении*/
+#controls label:hover {
+  /*прозрачность стрелок при наведении*/
   opacity: 0.6;
 }
 
-#controls label { /*прозрачность стрелок при отводе курсора*/
+#controls label {
+  /*прозрачность стрелок при отводе курсора*/
   transition: opacity 0.2s ease-out;
 }
 
@@ -526,7 +540,7 @@ label, a { /*при наведении на стрелки или переклю
   padding-right: 15px;
   padding-top: 50px;
   padding-left: 50px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (max-width: 1200px) {
   .contact__inf {
@@ -553,7 +567,7 @@ label, a { /*при наведении на стрелки или переклю
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 230px;
   height: 60px;
   font-size: 24px;
@@ -594,24 +608,9 @@ label, a { /*при наведении на стрелки или переклю
 .benefits {
   width: 100%;
   max-width: 1530px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (max-width: 1200px) {
-  .benefits {
-    max-width: 720px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .benefits {
-    max-width: 540px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .benefits {
-    max-width: none;
-  }
+  margin: auto;
+  padding-inline: 7%;
+  margin-bottom: 50px;
 }
 
 .benefits__var {
@@ -622,24 +621,18 @@ label, a { /*при наведении на стрелки или переклю
 
 .benefitsTable {
   display: grid;
-  grid-template-columns: 400px 300px;
+  grid-template: 1fr 1fr/1fr 1fr;
   row-gap: 5rem;
-}
-
-#benefitsImg {
-  margin-bottom: 150px;
 }
 
 .num {
   color: #FFED00;
   font-size: xx-large;
-  padding-right: 345px;
 }
 
 .numtxt {
-  font-family: "Gothic A1", sans-serif;
   font-family: "Inter", sans-serif;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .footer1 {
@@ -647,7 +640,7 @@ label, a { /*при наведении на стрелки или переклю
 }
 
 .footer1 {
-  background: #FFED00;
+  background: #ffed00;
 }
 
 .footer2 {
@@ -659,7 +652,7 @@ label, a { /*при наведении на стрелки или переклю
   font-family: "Gothic A1", sans-serif;
   font-family: "Inter", sans-serif;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   margin-top: 30px;
   margin-left: 225px;
@@ -699,7 +692,7 @@ label, a { /*при наведении на стрелки или переклю
   display: flex;
 }
 .footer3__logo {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 195px;
 }
 
@@ -714,7 +707,7 @@ label, a { /*при наведении на стрелки или переклю
 }
 
 .footer3__spaceap {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 195px;
 }
 
