@@ -716,4 +716,11 @@ label, a { /*при наведении на стрелки или переклю
 .footer3__spaceap {
   color: #FFFFFF;
   margin-right: 195px;
+}
+
+.readmore {
+  border: 1px solid #000000; /* Толщина рамки в пикселах,
+тип границы (в данном случае сплошная линия) и
+цвет линии */
+  padding: 5px; /* Расстояние от текста до рамки */
 }/*# sourceMappingURL=style.css.map */
