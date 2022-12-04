@@ -622,7 +622,7 @@ label, a { /*при наведении на стрелки или переклю
 
 .benefitsTable {
   display: grid;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 400px 300px;
   row-gap: 5rem;
 }
 
@@ -723,4 +723,9 @@ label, a { /*при наведении на стрелки или переклю
 тип границы (в данном случае сплошная линия) и
 цвет линии */
   padding: 5px; /* Расстояние от текста до рамки */
+}
+
+#footer-map {
+  width: 100%;
+  padding-left: 10px;
 }/*# sourceMappingURL=style.css.map */

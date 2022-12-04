@@ -1,9 +1,8 @@
-$yellow: #FFED00 ;
+$yellow: #ffed00;
 $dark-grey: #222222;
 $light-grey: #696969;
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #000000;
-
 
 $breakpoint-lg: 1200px;
 $breakpoint-md: 768px;
@@ -17,7 +16,7 @@ $p: 15px;
 @mixin container {
     width: 100%;
     max-width: $container-lg;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding-left: $p;
     padding-right: $p;
     @media screen and (max-width: $breakpoint-lg) {
@@ -33,11 +32,11 @@ $p: 15px;
     }
 }
 
-body{
-     margin: 0;
+body {
+    margin: 0;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,33 +46,32 @@ ul {
     list-style-type: none;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
 }
-.header{
-    font-family: 'Inter', sans-serif;
+.header {
+    font-family: "Inter", sans-serif;
     background-color: $yellow;
     width: 100%;
 }
 
-#nav1{
-    
+#nav1 {
 }
 
-#nav2{  
+#nav2 {
     padding-left: 0;
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-     @include container();
-     &__list {
+    @include container();
+    &__list {
         display: flex;
-     }
+    }
     &-item {
-        &-logo{
+        &-logo {
             width: 80px;
             height: 80px;
             margin-top: 20px;
@@ -82,32 +80,25 @@ ul {
         }
     }
 
-    &-link{
+    &-link {
         margin-right: 30px;
-        color:$dark-grey;
+        color: $dark-grey;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
-        text-decoration:none;
+        text-decoration: none;
     }
 }
 
-.bag{
-    &-count{
+.bag {
+    &-count {
         background-color: $dark-grey;
         font-size: 12px;
     }
 }
 
-
-
-
-
-
-
-
-.main{
+.main {
     width: 100%;
     background-size: cover;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/mainFont.png");
@@ -116,25 +107,25 @@ ul {
         padding-top: 190px;
         padding-bottom: 260px;
     }
-    &-title{
-        font-family: 'Gothic A1', sans-serif;
-        font-family: 'Inter', sans-serif;
+    &-title {
+        font-family: "Gothic A1", sans-serif;
+        font-family: "Inter", sans-serif;
         color: $white;
         font-size: 30px;
         text-transform: uppercase;
     }
 
-    &-decription{
-        font-family: 'Gothic A1', sans-serif;
-        font-family: 'Inter', sans-serif;
+    &-decription {
+        font-family: "Gothic A1", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
         color: $white;
     }
 }
- 
-.btn{
+
+.btn {
     background-color: $white;
     display: block;
     width: 230px;
@@ -143,48 +134,45 @@ ul {
     color: $black;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     transition: 0.2s;
 }
-.btn:hover { 
+.btn:hover {
     background-color: $yellow;
 }
 
-.hits{
+.hits {
     @include container();
     width: 100%;
     background-color: $white;
-     
-
 }
 
- 
-.menu{
-background-color: $dark-grey;
-position: static;
-width: 100%;
-    &__category{
+.menu {
+    background-color: $dark-grey;
+    position: static;
+    width: 100%;
+    &__category {
         padding-left: 195px;
         padding-top: 203px;
-        &-link{
-        display: block;
-        text-transform: uppercase;
-        color: $light-grey;
-        font-size: 80px;
-        font-weight: 700px;
-        font-family: 'Gothic A1', sans-serif;
-        font-family: 'Inter', sans-serif;
-        text-decoration: none;
-        transition: 0.2s;
-        margin-bottom: 82px;
+        &-link {
+            display: block;
+            text-transform: uppercase;
+            color: $light-grey;
+            font-size: 80px;
+            font-weight: 700px;
+            font-family: "Gothic A1", sans-serif;
+            font-family: "Inter", sans-serif;
+            text-decoration: none;
+            transition: 0.2s;
+            margin-bottom: 82px;
         }
-        &-link:hover { 
+        &-link:hover {
             color: $yellow;
         }
     }
 
-    &__btn{
+    &__btn {
         display: inline-block;
         text-transform: uppercase;
         color: $black;
@@ -193,122 +181,114 @@ width: 100%;
         background-color: $white;
         width: 150px;
         height: 150px;
-        font-size:24px;
-        font-family: 'Gothic A1', sans-serif;
-        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-family: "Gothic A1", sans-serif;
+        font-family: "Inter", sans-serif;
         margin-left: 795px;
         margin-bottom: 93px;
-
     }
-    &__btn:hover { 
+    &__btn:hover {
         background-color: $yellow;
     }
 }
 
-.blog{
+.blog {
     padding-inline: 7%;
 }
 .blog__title {
-    
     font-size: 50px;
     font-family: "Gothic A1", sans-serif;
     margin-top: 150px;
-  }
+}
 
-  .blog__articles {
+.blog__articles {
     display: grid;
     grid-template-columns: 4fr 3fr 2fr;
-  }
+}
 
-  .blog__articles>div {
+.blog__articles > div {
     margin-right: 5%;
     transition: 0.5s;
-    position:relative;
-    }
+    position: relative;
+}
 
-  .blog__articles>div:hover {
+.blog__articles > div:hover {
     background-color: $yellow;
     transition: 0.5s;
-  }
+}
 
-  .blog__article-img {
+.blog__article-img {
     width: 100%;
     height: auto;
-  }
+}
 
-  .blog__article-title {
+.blog__article-title {
     font-family: "Inter", sans-serif;
     font-size: 30px;
-  }
+}
 
-  .blog__article-content {
+.blog__article-content {
     font-size: 14px;
     font-family: "Inter", sans-serif;
-     
-  }
+}
 
-  .blog__article__1 {
+.blog__article__1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-inline: 5%;
     float: left;
-  }
+}
 
-  .blog__article__1 img {
+.blog__article__1 img {
     border-radius: 20%;
-  }
+}
 
-  .blog__article__2 a {
+.blog__article__2 a {
     position: absolute;
     top: 95%;
     text-decoration: none;
     color: $black;
-    }
-
-    .blog__article__1 p {
-        padding-left: 40%;
-        }
-
-#no-scroll{
-
 }
 
-.new{
+.blog__article__1 p {
+    padding-left: 40%;
+}
+
+#no-scroll {
+}
+
+.new {
     @include container();
-        &__title{
-            font-size: 80px;
-            font-family: 'Gothic A1', sans-serif;
-            padding-top: 188px;
-            margin-bottom: 14px;
-        }
-
-        &__catalog{
-
-            &-link{
-                display: inline-block;
-                margin-right: 30px;
-                font-size: 18px;
-                text-decoration: none;
-                color: $black;
-            }
-        }
-
-}
- 
-.all{@include container();
-    &-title{
-        font-family: 'Gothic A1', sans-serif;
-        font-family: 'Inter', sans-serif;
+    &__title {
         font-size: 80px;
-        
-     
-        
+        font-family: "Gothic A1", sans-serif;
+        padding-top: 188px;
+        margin-bottom: 14px;
+    }
+
+    &__catalog {
+        &-link {
+            display: inline-block;
+            margin-right: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: $black;
+        }
     }
 }
- 
-#slider{ 
+
+.all {
+    @include container();
+    &-title {
+        font-family: "Gothic A1", sans-serif;
+        font-family: "Inter", sans-serif;
+        font-size: 80px;
+    }
+}
+
+#slider {
     @include container();
     position: relative;
     text-align: center;
@@ -316,111 +296,121 @@ width: 100%;
     margin: 0 auto;
     margin-bottom: 308px;
 }
-#slider article{
-     width: 20%;
-     float: left;
-     margin-right: 30px;
+#slider article {
+    width: 20%;
+    float: left;
+    margin-right: 30px;
 }
 
-
-#slides .image{ /*устанавливает общий размер блока с изображениями*/
-	width: 200%;
-	line-height: 0;
+#slides .image {
+    /*устанавливает общий размер блока с изображениями*/
+    width: 200%;
+    line-height: 0;
 }
 
-#overflow{ /*сркывает все, что находится за пределами этого блока*/
-	width: 100%;
-	overflow: hidden;
+#overflow {
+    /*сркывает все, что находится за пределами этого блока*/
+    width: 100%;
+    overflow: hidden;
 }
 
-article img{ /*размер изображений слайдера*/
-	width: 50%;
+article img {
+    /*размер изображений слайдера*/
+    width: 50%;
 }
 
-#desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 960px; /*максимальнная длинна*/
+#desktop:checked ~ #slider {
+    /*размер всего слайдера*/
+    max-width: 960px; /*максимальнная длинна*/
 }
 
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ #controls label:nth-child(5), 
+#switch1:checked ~ #controls label:nth-child(5),
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
-#switch5:checked ~ #controls label:nth-child(4){
-	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
-	float: left;
-	margin: 0 0 0 -84px; /*сдвиг влево*/
-	display: block;
-	height: 68px;
-	width: 68px;
+#switch5:checked ~ #controls label:nth-child(4) {
+    background: url("prev.png") no-repeat; /*заливка фона картинкой без повторений*/
+    float: left;
+    margin: 0 0 0 -84px; /*сдвиг влево*/
+    display: block;
+    height: 68px;
+    width: 68px;
 }
 
 /*настройка переключения и положения для правой стрелки*/
-#switch1:checked ~ #controls label:nth-child(2), 
+#switch1:checked ~ #controls label:nth-child(2),
 #switch2:checked ~ #controls label:nth-child(3),
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
-#switch5:checked ~ #controls label:nth-child(1){
-	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
-	float: right;
-	margin: 0 -84px 0 0; /*сдвиг вправо*/
-	display: block;
-	height: 68px;
-	width: 68px;
+#switch5:checked ~ #controls label:nth-child(1) {
+    background: url("next.png") no-repeat; /*заливка фона картинкой без повторений*/
+    float: right;
+    margin: 0 -84px 0 0; /*сдвиг вправо*/
+    display: block;
+    height: 68px;
+    width: 68px;
 }
 
-label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
-	cursor: pointer;
+label,
+a {
+    /*при наведении на стрелки или переключатели - курсор изменится*/
+    cursor: pointer;
 }
 
-.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
-	display: none;
+.all input {
+    /*скрывает стандартные инпуты (чекбоксы) на странице*/
+    display: none;
 }
 
 /*позиция изображения при активации переключателя*/
-#switch1:checked ~ #slides .image{
-	margin-left: 0;
+#switch1:checked ~ #slides .image {
+    margin-left: 0;
 }
 
-#switch2:checked ~ #slides .image{
-	margin-left: -100%;
+#switch2:checked ~ #slides .image {
+    margin-left: -100%;
 }
 
-#switch3:checked ~ #slides .image{
-	margin-left: -200%;
+#switch3:checked ~ #slides .image {
+    margin-left: -200%;
 }
 
-#switch4:checked ~ #slides .image{
-	margin-left: -300%;
+#switch4:checked ~ #slides .image {
+    margin-left: -300%;
 }
 
-#switch5:checked ~ #slides .image{
-	margin-left: -400%;
+#switch5:checked ~ #slides .image {
+    margin-left: -400%;
 }
 
-#controls{ /*положение блока всех управляющих элементов*/
-	margin: -25% 0 0 0;
-	width: 100%;
-	height: 50px;
+#controls {
+    /*положение блока всех управляющих элементов*/
+    margin: -25% 0 0 0;
+    width: 100%;
+    height: 50px;
 }
 
-#active label{ /*стиль отдельного переключателя*/
-	border-radius: 10px; /*скругление углов*/
-	display: inline-block; /*расположение в строку*/
-	width: 15px;
-	height: 15px;
-	background: #bbb;
+#active label {
+    /*стиль отдельного переключателя*/
+    border-radius: 10px; /*скругление углов*/
+    display: inline-block; /*расположение в строку*/
+    width: 15px;
+    height: 15px;
+    background: #bbb;
 }
 
-#active{ /*расположение блока с переключателями*/
-	margin: 23% 0 0;
-	text-align: center;
+#active {
+    /*расположение блока с переключателями*/
+    margin: 23% 0 0;
+    text-align: center;
 }
 
-#active label:hover{ /*поведение чекбокса при наведении*/
-	background: #76c8ff;
-	border-color: #777 !important; /*выполнение в любом случае*/
+#active label:hover {
+    /*поведение чекбокса при наведении*/
+    background: #76c8ff;
+    border-color: #777 !important; /*выполнение в любом случае*/
 }
 
 /*цвет активного лейбла при активации чекбокса*/
@@ -428,37 +418,38 @@ label, a{ /*при наведении на стрелки или переклю�
 #switch2:checked ~ #active label:nth-child(2),
 #switch3:checked ~ #active label:nth-child(3),
 #switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5){
-	background: #18a3dd;
-	border-color: #18a3dd !important;
+#switch5:checked ~ #active label:nth-child(5) {
+    background: #18a3dd;
+    border-color: #18a3dd !important;
 }
 
-#slides .image{ /*анимация пролистывания изображений*/
-	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+#slides .image {
+    /*анимация пролистывания изображений*/
+    transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-#controls label:hover{ /*прозрачность стрелок при наведении*/
-	opacity: 0.6;
+#controls label:hover {
+    /*прозрачность стрелок при наведении*/
+    opacity: 0.6;
 }
 
-#controls label{ /*прозрачность стрелок при отводе курсора*/
-	transition: opacity 0.2s ease-out;
+#controls label {
+    /*прозрачность стрелок при отводе курсора*/
+    transition: opacity 0.2s ease-out;
 }
- 
 
-
-.contact{
+.contact {
     @include container();
     background-image: url("/css/img/ringUs.png");
-    background-size:cover;
+    background-size: cover;
     margin-top: 100px;
-    &__inf{
+    &__inf {
         @include container();
         padding-top: 50px;
         padding-left: 50px;
-        color: #FFFFFF;
+        color: #ffffff;
     }
-    &__btn{
+    &__btn {
         @include container();
         display: inline-block;
         text-transform: uppercase;
@@ -467,53 +458,49 @@ label, a{ /*при наведении на стрелки или переклю�
         background-color: $white;
         width: 230px;
         height: 60px;
-        font-size:24px;
-        font-family: 'Gothic A1', sans-serif;
-        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-family: "Gothic A1", sans-serif;
+        font-family: "Inter", sans-serif;
         margin-top: 55px;
         margin-left: 50px;
         margin-bottom: 50px;
     }
-   
 }
 
-.textContact{
+.textContact {
     font-size: 30px;
-    font-family: 'Gothic A1', sans-serif;
-        font-family: 'Inter', sans-serif;
+    font-family: "Gothic A1", sans-serif;
+    font-family: "Inter", sans-serif;
 }
-.benefits__title{
+.benefits__title {
     font-size: 80px;
-    font-family: 'Gothic A1', sans-serif;
-        font-family: 'Inter', sans-serif;
-
+    font-family: "Gothic A1", sans-serif;
+    font-family: "Inter", sans-serif;
 }
-.benefits{
+.benefits {
     @include container();
 }
-.benefits__var{
+.benefits__var {
     display: flex;
     align-items: center;
     justify-content: space-between;
-      
-} 
+}
 .benefitsTable {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 400px 300px;
     row-gap: 5rem;
-  }
-#benefitsImg{
+}
+#benefitsImg {
     margin-bottom: 150px;
 }
-.num{
-    color:$yellow;
-    font-size:xx-large;
+.num {
+    color: $yellow;
+    font-size: xx-large;
     padding-right: 345px;
-  
-  }
-.numtxt{
-    font-family: 'Gothic A1', sans-serif;
-    font-family: 'Inter', sans-serif;
+}
+.numtxt {
+    font-family: "Gothic A1", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-right: 30px;
 }
 
@@ -522,66 +509,66 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 .footer1 {
-    background:$yellow;
+    background: $yellow;
 }
 
 .footer2 {
-    
 }
 
 .footer2 {
-    background:$dark-grey;
+    background: $dark-grey;
     display: flex;
 }
 
-.infLi{
-    font-family: 'Gothic A1', sans-serif;
-    font-family: 'Inter', sans-serif;
+.infLi {
+    font-family: "Gothic A1", sans-serif;
+    font-family: "Inter", sans-serif;
     text-decoration: none;
     color: $white;
     display: flex;
     margin-top: 30px;
     margin-left: 225px;
-    
 }
-#map{
+#map {
     @include container();
 }
 
-#footLogo{
-   margin-left: 205px;
+#footLogo {
+    margin-left: 205px;
 }
 
 .footer3 {
     align-items: center;
     justify-content: space-between;
-    background:$dark-grey;
+    background: $dark-grey;
     display: flex;
-    &__logo{
+    &__logo {
         color: $white;
         margin-left: 195px;
     }
 }
 
-.logotypes{
+.logotypes {
     margin-left: 225px;
     margin-top: 80px;
     align-items: center;
     display: flex;
-    &__img{
+    &__img {
         margin-right: 30px;
     }
 }
-.footer3__spaceap{
+.footer3__spaceap {
     color: $white;
     margin-right: 195px;
 }
- 
 
-.readmore{
+.readmore {
     border: 1px solid $black; /* Толщина рамки в пикселах,
     тип границы (в данном случае сплошная линия) и
     цвет линии */
-padding: 5px; /* Расстояние от текста до рамки */
-
+    padding: 5px; /* Расстояние от текста до рамки */
+}
+#footer-map {
+    width: 100%;
+    padding-left: 10px;
 }
