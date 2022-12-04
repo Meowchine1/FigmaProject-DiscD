@@ -1,4 +1,4 @@
-$yellow: #c4c007 ;
+$yellow: #FFED00 ;
 $dark-grey: #222222;
 $light-grey: #696969;
 $white: #FFFFFF;
@@ -100,6 +100,13 @@ ul {
     }
 }
 
+
+
+
+
+
+
+
 .main{
     width: 100%;
     background-size: cover;
@@ -149,14 +156,6 @@ ul {
     width: 100%;
     background-color: $white;
      
-    &-title{
-        @include container();
-        font-family: 'Gothic A1', sans-serif;
-        font-family: 'Inter', sans-serif;
-        font-size: 80px;
-        margin-top: 150px;
-         margin-top: 74px;
-    }
 
 }
 
@@ -207,73 +206,77 @@ width: 100%;
 }
 
 .blog{
-    &__title{
-        @include container();
-        font-size: 80px;
-        text-transform: uppercase;
-        font-family: 'Gothic A1', sans-serif;
-        padding-top: 150px;
+    padding-inline: 7%;
+}
+.blog__title {
+    
+    font-size: 50px;
+    font-family: "Gothic A1", sans-serif;
+    margin-top: 150px;
+  }
+
+  .blog__articles {
+    display: grid;
+    grid-template-columns: 4fr 3fr 2fr;
+  }
+
+  .blog__articles>div {
+    margin-right: 5%;
+    transition: 0.5s;
+    position:relative;
     }
-    &__article{
-        
-        display: inline-block;
-        &__1{
-            
-            display: inline-block;
-            background-color: $yellow;
-            &-title{@include container();
-                font-family: 'Gothic A1', sans-serif;
-                font-size: 40px;
-            }
-            &-content{
-                font-size: 16px;
-                font-family: 'Gothic A1', sans-serif;
-                font-family: 'Inter', sans-serif;
-            }
-            &-img{
-                border-radius: 20%;
-            }
-        }
 
-        &__2{
-            display: inline-block;
-            height: 730px;
+  .blog__articles>div:hover {
+    background-color: $yellow;
+    transition: 0.5s;
+  }
 
-            &-title{
-                font-family: 'Gothic A1', sans-serif;
-                font-size: 40px;
-            }
+  .blog__article-img {
+    width: 100%;
+    height: auto;
+  }
 
-            &-content{
-                font-size: 16px;
-                font-family: 'Gothic A1', sans-serif;
-            }
-            &-img{
-                
-            }
-        }
+  .blog__article-title {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+  }
 
-        &__3{
-            display: inline-block;
-            &-title{
-                font-family: 'Gothic A1', sans-serif;
-                font-size: 40px;
-            }
-            &-content{
-                font-size: 16px;
-                font-family: 'Gothic A1', sans-serif;
-            }
-            &-img{
+  .blog__article-content {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+     
+  }
 
-            }
+  .blog__article__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5%;
+    float: left;
+  }
 
-        }
+  .blog__article__1 img {
+    border-radius: 20%;
+  }
 
+  .blog__article__2 a {
+    position: absolute;
+    top: 95%;
+    text-decoration: none;
+    color: $black;
     }
+
+    .blog__article__1 p {
+        padding-left: 40%;
+        }
+
+#no-scroll{
+
 }
 
 .new{
-
+    @include container();
         &__title{
             font-size: 80px;
             font-family: 'Gothic A1', sans-serif;
@@ -294,6 +297,16 @@ width: 100%;
 
 }
  
+.all{@include container();
+    &-title{
+        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Inter', sans-serif;
+        font-size: 80px;
+        
+     
+        
+    }
+}
  
 #slider{ 
     @include container();
@@ -309,112 +322,127 @@ width: 100%;
      margin-right: 30px;
 }
 
-#slider .image{
-    width: 50%;
-    line-height: 0;
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 200%;
+	line-height: 0;
 }
 
-#overflow{
-    width: 100%;
-    overflow: hidden;
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
 }
 
-article img{
-    width: 100%;
+article img{ /*размер изображений слайдера*/
+	width: 50%;
 }
 
-#desctop:checked ~ #slider{
-    max-width: 900px;
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+	max-width: 960px; /*максимальнная длинна*/
 }
 
-#switch1:checked ~ #controls label:nth-child(4),
-#switch2:checked ~ #controls label:nth-child(3),
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2),
-#switch4:checked ~ #controls label:nth-child(1){
-    background: url("sliderBtn.png") no-repeat;
-    float: left;
-    margin: 0 0 0 -83px;
-    display: block;
-    height: 68px;
-    width: 68px;
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: 0 0 0 -84px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
 }
- 
-#switch1:checked ~ #controls label:nth-child(2),
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
 #switch2:checked ~ #controls label:nth-child(3),
 #switch3:checked ~ #controls label:nth-child(4),
-#switch4:checked ~ #controls label:nth-child(1){
-    background: url("rightSlider.png") no-repeat;
-    float: right;
-    margin: 0 -84px 0 0;
-    display: block;
-    height: 68px;
-    width: 68px;
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: 0 -84px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
 }
 
-label, a{
-    cursor: pointer;
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
 }
 
-.all input{
-    display: none;
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
 }
 
+/*позиция изображения при активации переключателя*/
 #switch1:checked ~ #slides .image{
-    margin-left: 0;
+	margin-left: 0;
 }
+
 #switch2:checked ~ #slides .image{
-    margin-left: -100%;
+	margin-left: -100%;
 }
+
 #switch3:checked ~ #slides .image{
-    margin-left: -200%;
+	margin-left: -200%;
 }
+
 #switch4:checked ~ #slides .image{
-    margin-left: -300%;
+	margin-left: -300%;
 }
 
-#controls{
-    margin: -25% 0 0 0;
-    width: 100%;
-    height: 50px;
+#switch5:checked ~ #slides .image{
+	margin-left: -400%;
 }
 
-#active label{
-    border-radius: 10px;
-    display: inline-block;
-    width: 15px;
-    height:15px;
-    background: rgb(229, 166, 214);
+#controls{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
 }
 
-#active{
-    margin: 23% 0 0;
-    text-align:center;
-
+#active label{ /*стиль отдельного переключателя*/
+	border-radius: 10px; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 15px;
+	height: 15px;
+	background: #bbb;
 }
 
-#active label:hover{
-    background: #c4c007;
-    border-color: #222222 !important;
+#active{ /*расположение блока с переключателями*/
+	margin: 23% 0 0;
+	text-align: center;
 }
 
+#active label:hover{ /*поведение чекбокса при наведении*/
+	background: #76c8ff;
+	border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
 #switch1:checked ~ #active label:nth-child(1),
 #switch2:checked ~ #active label:nth-child(2),
 #switch3:checked ~ #active label:nth-child(3),
-#switch4:checked ~ #active label:nth-child(4){
-    background: #18a3dd;
-    border-color: #18a3dd !important;
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+	background: #18a3dd;
+	border-color: #18a3dd !important;
 }
 
-#slides .image{
-    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
-#controls label:hover{
-    opacity: 0.6;
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
 }
 
-#controls label{
-    transition: opacity 0.2s ease-out;
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
 }
  
 
@@ -448,3 +476,104 @@ label, a{
     }
    
 }
+
+.textContact{
+    font-size: 30px;
+    font-family: 'Gothic A1', sans-serif;
+        font-family: 'Inter', sans-serif;
+}
+.benefits__title{
+    font-size: 80px;
+    font-family: 'Gothic A1', sans-serif;
+        font-family: 'Inter', sans-serif;
+
+}
+.benefits{
+    @include container();
+}
+.benefits__var{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      
+} 
+.benefitsTable {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    row-gap: 5rem;
+  }
+#benefitsImg{
+    margin-bottom: 150px;
+}
+.num{
+    color:$yellow;
+    font-size:xx-large;
+    padding-right: 345px;
+  
+  }
+.numtxt{
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin-right: 30px;
+}
+
+.footer1 {
+    padding: 1rem;
+}
+
+.footer1 {
+    background:$yellow;
+}
+
+.footer2 {
+    
+}
+
+.footer2 {
+    background:$dark-grey;
+    display: flex;
+}
+
+.infLi{
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 225px;
+    
+}
+#map{
+    @include container();
+}
+
+#footLogo{
+   margin-left: 205px;
+}
+
+.footer3 {
+    align-items: center;
+    justify-content: space-between;
+    background:$dark-grey;
+    display: flex;
+    &__logo{
+        color: $white;
+        margin-left: 195px;
+    }
+}
+
+.logotypes{
+    margin-left: 195px;
+    margin-top: 80px;
+    align-items: center;
+    display: flex;
+    &__img{
+        margin-right: 30px;
+    }
+}
+.footer3__spaceap{
+    color: $white;
+    margin-right: 195px;
+}
+ 
